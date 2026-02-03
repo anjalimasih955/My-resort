@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>My Resort – Home</title>
+  <title>Resorvia Resort – Luxury Stay</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
@@ -10,31 +10,60 @@
 <body>
 
   <header class="navbar">
-    <div class="logo">Resorvia</div>
-
-    <nav>
-      <a href="#">About</a>
-      <a href="#">Room</a>
-      <a href="#">Services</a>
-      <a href="#">Offers</a>
-      <a href="#">Gallary</a>
-      <a href="#">Contact</a>
+    <div class="logo-container">
+      <img src="{{ url_for('static', filename='rsv-logo.png') }}" alt="RSV Resorvia Logo" class="logo">
+      <h1 class="brand-name"></h1>
+    </div>
+    <nav class="nav">
+      <ul>
+        <li><h3><a href="#home">Home</a></h3></li>
+        <li><h3><a href="#about">About</a> </h3></li>
+        <li><h3><a href="#rooms">Rooms</a></h3></li>
+        <li><h3><a href="#service">Service</a></h3></li>
+        <li><h3><a href="#gallery">Gallery</a></h3></li>
+        <li><h3><a href="#contact">Contact</a></h3></li>
+      </ul>
     </nav>
-
     <div class="nav-actions">
-      <a href="#" class="login">Login / Join</a>
-      <a href="#" class="cta">Book a Stay</a>
+      <h3><a href="#" class="login">Login / Join</a></h3>
+      <h3><a href="#" class="cta">Book a Stay</a></h3>
     </div>
   </header>
 
-  <section class="hero">
+  <section class="hero" id="home">
     <div class="overlay"></div>
     <div class="hero-content">
-      <h1>Resorvia</h1>
-    <p>Great resort management doesn't just welcome guests—it makes them want to return.”</p>
-      <a href="#" class="hero-btn">Book Your dream stay</a>
+      <h1> Resorvia</h1>
+      <p><h2><b>RESORVIA  – Live   Like   Royalty</b></h2> </p>
+      <a href="#" class="hero-btn">Book Your Dream Stay</a>
     </div>
   </section>
+
+  <section class="features">
+    <div class="container">
+      <h2>Why Choose Resorvia?</h2>
+      <div class="feature-grid">
+        <div class="feature-item">
+          <h3>Luxury Accommodations</h3>
+          <p>Spacious rooms with breathtaking views and modern amenities.</p>
+        </div>
+        <div class="feature-item">
+          <h3>World-Class Dining</h3>
+          <p>Savor exquisite cuisine prepared by our expert chefs.</p>
+        </div>
+        <div class="feature-item">
+          <h3>Spa & Wellness</h3>
+          <p>Rejuvenate your body and mind with our premium spa services.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2023 Resorvia Resort. All rights reserved.</p>
+    </div>
+  </footer>
 
 </body>
 </html>
